@@ -5,16 +5,15 @@ from .forms import OrderForm
 
 
 def checkout(request):
-    bag = request.sessin.get('bag', {})
+    bag = request.session.get('bag', {})
     if not bag:
         messages.error(request, "There's nothing in your bag at the moment")
-        return redirect(reversed('products'))
+        return redirect(reverse('products'))
 
+    order_form = OrderForm()
+    template = 'checkout/checkout.html'
+    context = {
+        'order_form': order_form,
+    }
 
-order_form = OrderForm()
-template = 'checkout/checkout.html'
-context = {
-    'order_form': order_form
-}
-
-return render(request, template, context)
+    return render(request, template, context)
