@@ -110,9 +110,11 @@ a.category-badge > span.badge:hover {
     right: 15px;
     z-index: 99999999999;
 }
+
 .custom-toast {
     overflow: visible;
 }
+
 .toast-capper {
     height: 2px;
 }
@@ -137,24 +139,31 @@ a.category-badge > span.badge:hover {
 .arrow-secondary {
     border-bottom-color: #6c757d !important;
 }
+
 .arrow-success {
     border-bottom-color: #28a745 !important;
 }
+
 .arrow-danger {
     border-bottom-color: #dc3545 !important;
 }
+
 .arrow-warning {
     border-bottom-color: #ffc107 !important;
 }
+
 .arrow-info {
     border-bottom-color: #17a2b8 !important;
 }
+
 .arrow-light {
     border-bottom-color: #f8f9fa !important;
 }
+
 .arrow-dark {
     border-bottom-color: #343a40 !important;
 }
+
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
@@ -169,6 +178,7 @@ a.category-badge > span.badge:hover {
     max-width: 80%;
   }
 }
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -178,6 +188,7 @@ a.category-badge > span.badge:hover {
         left: 0;
         z-index: 1030;
     }
+
     .header-container {
         padding-top: 164px;
     }
