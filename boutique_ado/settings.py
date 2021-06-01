@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'p@ei#69*b*zz3u4yie-$()@cy^l(+x9&@6ypx+r0lm(3%_9hr7'
+SECRET_KEY = 'sk_test_51IsTFXGb1tfsAqedHvwPZV0MX9byPkWt05Ne1oZyTsqtBBIuB8xT7Xg806hi8T368bu7YzNl9EpBjydxvnsCqgQA00uQBFD2S7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -172,6 +172,7 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
 
 # Set default to avoid unwanted migrations
-DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+# DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
